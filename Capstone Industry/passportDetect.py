@@ -12,7 +12,7 @@ def detectText(photo, bucket, boxes):
         img = img.rotate(90)
     # small amount of processing on the image to improve extraction results
     #exposed=process.overExpose(np.array(img), [255, 255, 140])
-    #cv.imshow("cunt", exposed)
+    #cv.imshow("exp", exposed)
     #cv.waitKey(0)
     byteboi = process.numpy_to_binary(np.array(img))
     # using filterbyregion text extraction can isolate the areas of the image predetermined to be of interest
